@@ -10,6 +10,7 @@
 		F1B108141A6D012B00A35A19 /* MonthCalendarView.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B108131A6D012B00A35A19 /* MonthCalendarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1B1081A1A6D012B00A35A19 /* MonthCalendarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1B1080E1A6D012B00A35A19 /* MonthCalendarView.framework */; };
 		F1B108211A6D012B00A35A19 /* MonthCalendarViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B108201A6D012B00A35A19 /* MonthCalendarViewTests.swift */; };
+		F1B108681A6D028F00A35A19 /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B108671A6D028F00A35A19 /* MonthCalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		F1B108191A6D012B00A35A19 /* MonthCalendarViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonthCalendarViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B1081F1A6D012B00A35A19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1B108201A6D012B00A35A19 /* MonthCalendarViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCalendarViewTests.swift; sourceTree = "<group>"; };
+		F1B108671A6D028F00A35A19 /* MonthCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthCalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		F1B108101A6D012B00A35A19 /* MonthCalendarView */ = {
 			isa = PBXGroup;
 			children = (
+				F1B108671A6D028F00A35A19 /* MonthCalendarView.swift */,
 				F1B108131A6D012B00A35A19 /* MonthCalendarView.h */,
 				F1B108111A6D012B00A35A19 /* Supporting Files */,
 			);
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B108681A6D028F00A35A19 /* MonthCalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +323,7 @@
 		F1B108251A6D012B00A35A19 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -328,12 +333,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		F1B108261A6D012B00A35A19 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -395,6 +402,7 @@
 				F1B108261A6D012B00A35A19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1B108271A6D012B00A35A19 /* Build configuration list for PBXNativeTarget "MonthCalendarViewTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +411,7 @@
 				F1B108291A6D012B00A35A19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
